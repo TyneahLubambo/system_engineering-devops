@@ -1,5 +1,5 @@
- #!/usr/bin/env bash
-# Loop from 1 to 10, displaying special messages on 4th and 8th iterations
+#!/usr/bin/env bash
+# Loop from 1 to 10, printing special messages on 4th and 8th iterations
 
 count=1
 while [ $count -le 10 ]; do
