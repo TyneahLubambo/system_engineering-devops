@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# List current directory files showing only the part after the first dash (-), skipping hidden files
+
+for file in *; do
+  part="${file#*-}"
+  echo "$part"
+done
