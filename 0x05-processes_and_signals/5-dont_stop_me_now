@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
-# This script finds the PID(s) of the 4-to_infinity_and_beyond process and kills them.
+# This script silently kills the 4-to_infinity_and_beyond process if it is running.
 
 pids=$(pgrep -f 4-to_infinity_and_beyond)
 
-if [ -z "$pids" ]; then
-  echo "No 4-to_infinity_and_beyond process found."
-else
-  kill $pids
-  echo "Killed process(es): $pids"
+if [ -n "$pids" ]; then
+  kill "$pids"
 fi
+
