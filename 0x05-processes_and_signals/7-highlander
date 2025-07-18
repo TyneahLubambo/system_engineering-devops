@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script handles SIGTERM and displays a message
+# This script handles SIGTERM by printing OK
 
-trap 'echo "I am invincible!!!"; exit' SIGTERM
+trap 'echo OK; exit' SIGTERM
 
 while true
 do
